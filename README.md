@@ -9,6 +9,7 @@ O projeto é organizado da seguinte maneira:
 - `src/components`: Esta pasta contém todos os componentes React usados no projeto.
 - `src/hooks`: Esta pasta contém todos os hooks personalizados usados no projeto.
 - `src/contexts`: Esta pasta contém todos os contextos React usados no projeto.
+- `src/entities`: Esta pasta contém a estrutura e metodos do Objeto que sera criado no banco de dados
 
 ## Componentes
 
