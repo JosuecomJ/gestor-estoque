@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import StockItem, { CATEGORIES } from "../entities/StockItem"
 import { useRef, useState } from "react"
 import {useStock} from "../hooks/useStock"
+import { useNavigate } from "react-router-dom"
 
 ItemForm.propTypes = {
   itemToUpdate: PropTypes.object
@@ -23,13 +24,17 @@ export default function ItemForm({ itemToUpdate }) {
   const handleChange = (ev) => {
     setItem((current) => ({ ...current, [ev.target.name]: ev.target.value }))
   }
+  const navigate = useNavigate() 
 
   const handleSubmit = (ev) => {
+   
     ev.preventDefault()
     try {
       if (itemToUpdate) {
         updateItem(itemToUpdate.id, item)
         alert("Item atualizado com sucesso!")
+       
+        navigate('/items')
       } else {
         const validItem = new StockItem(item)
         addItem(validItem)
