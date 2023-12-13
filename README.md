@@ -1,4 +1,4 @@
-# Gestor de Estoque React
+# Gestor de Estoque React | <a href="https://gestor-estoque-iota.vercel.app"> Projeto online
 
 Este é um projeto de gerenciamento de estoque construído com React.
 
